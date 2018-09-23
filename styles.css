@@ -1,0 +1,278 @@
+/* Add styles here */
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/*--------- Main Header -------*/
+.main-header{
+    background-image: url("images/technology.JPG");
+    background-size: cover;
+    padding: 15px;
+    text-align: right;
+    color: white;
+    font-size: 30px;
+    font-family: Chiller;
+}
+
+/*------ Main Navigation Bar ----------*/
+
+.main-nav{
+    background-color: black;
+    overflow: hidden;
+}
+.main-nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-nav ul li{
+    float: left;
+}
+.main-nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    font-size: 18px;
+    display: inline-block;
+}
+.main-nav ul li a:hover{
+    background-color: #778264;
+}
+.main-nav ul li a.active{
+    background-color: #63c55b;
+}
+
+/*--------Latest News---------------*/
+.latest-news{
+    background-color: black;
+    color: gold;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 5px;
+    overflow: hidden;
+    animation: latest-news 2s infinite linear;
+}
+@keyframes latest-news {
+0%,50%,100%{
+    background-color: #778264;
+}
+    25%,75%{
+        background-color: black;
+    }
+
+}
+.latest-news span{
+    color: orangered;
+}
+.latest-news p{
+    margin: 0;
+    animation: news 12s infinite linear;
+}
+@keyframes news {
+    0%{transform: translateX(100%)  }
+    100%{transform: translateX(-100%)}
+
+}
+/*---------- Home News Section-------------*/
+.home-news-section{
+    margin-left: 150px;
+
+}
+.home-news-artcle{
+    border: 2px solid black;
+    width: 330px;
+    height: 550px;
+    text-align: center;
+    float: left;
+    margin: 5px;
+    border-radius: 15px;
+    transition: all 0.6s;
+    cursor: pointer;
+}
+.home-news-artcle:hover{
+    width: 360px;
+    box-shadow: 0 0 15px black;
+}
+.home-news-artcle img{
+    width: 100%;
+}
+.home-news-text{
+    padding: 10px;
+}
+/*--------- break ----------*/
+.break{
+    clear: both;
+}
+/*--------------------- Main News Article-----------------*/
+.main-news-section{
+    width: 1100px;
+    margin: auto;
+}
+.main-news-article{
+
+
+}
+.main-news-article h2{
+    background: linear-gradient(to right,seagreen,mediumturquoise,seagreen);
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px black;
+}
+.main-news-article p{
+    font-size: 18px;
+    text-align: center;
+    overflow: hidden;
+}
+.zoom{
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+}
+.zoom img{
+    width: inherit;
+    height: inherit;
+    transition: all 1s;
+}
+.zoom:hover img{
+    transform: scale(1.2,1.2);
+}
+/* -------------- Main Footer ----------*/
+.main-footer small a{
+    text-decoration: none;
+}
+.main-footer{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 15px;
+}
+.main-footer small, .main-footer a{
+    color: orange;
+}
+/*---------------- Gallery Section---------*/
+
+.gallery-section{
+    margin-left: 10px;
+}
+.gallery-article{
+    border: 2px solid black;
+    width: 300px;
+    float: left;
+    margin: 7px;
+    text-align: center;
+    padding: 7px;
+    border-radius: 12px;
+    transition: all 1s;
+}
+.gallery-article:hover{
+    box-shadow: 0 0 15px black;
+}
+.gallery-zoom{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.gallery-zoom img{
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.gallery-zoom:hover img{
+    transform: scale(1.2,1.2);
+}
+/*---------------About section-------*/
+.about-section{
+    width: 1100px;
+    margin: auto;
+}
+.about-article{
+    background: white url("images/image5.jpeg") no-repeat scroll bottom;
+    color: white;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #321e10;
+}
+
+.about-article p{
+    font-size: 18px;
+}
+.company-images{
+    text-align: center;
+}
+.company-images img{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+}
+
+/*------------------Login form section-----------*/
+.contact-section{
+    font-family: Arial, sans-serif;
+    background: white url("images/image5.jpeg") no-repeat fixed top;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+
+}
+.form-div{
+    width: 250px;
+    text-align: center;
+    margin: 200px auto;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 12px;
+    box-shadow: 0 0 15px #00AFFE;
+}
+.form-div img{
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+}
+.form-div h2{
+    color: white;
+    margin-top: 10px;
+}
+input[type='text'],input[type='password']{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    text-align: center;
+    height: 30px;
+    background: transparent;
+    border-bottom: 3px solid teal;
+    width: 200px;
+    color: white;
+}
+::placeholder{
+    color: lightgray;
+}
+input[type='text']:focus,input[type='password']:focus{
+    border-bottom: 3px solid #00AFFE;
+}
+input[type='submit']{
+    background-color: teal;
+    border: none;
+    font-size: 18px;
+    margin: 15px;
+    color: white;
+    border-radius: 50px;
+    padding: 8px 40px;
+    outline: none;
+}
+input[type='submit']:hover{
+    cursor: pointer;
+    box-shadow: 0 0 15px;
+}
